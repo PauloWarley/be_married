@@ -50,8 +50,8 @@ const BibleVerses = () => {
   return (
     <div>
       <h2>Versículos Bíblicos</h2>
-      <p>"Portanto, o que Deus uniu, ninguém o separe." - Marcos 10:9</p>
-      <p>"O amor é paciente, o amor é bondoso." - 1 Coríntios 13:4</p>
+      <p>&quot;Portanto, o que Deus uniu, ninguém o separe.&quot; - Marcos 10:9</p>
+      <p>&quot;O amor é paciente, o amor é bondoso.&quot; - 1 Coríntios 13:4</p>
       {/* Adicione mais versículos bíblicos conforme necessário */}
     </div>
   );
