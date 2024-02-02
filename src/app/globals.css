@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #f5f5f5; Cor de fundo suave */
   background-image: url('../../public/background.jpeg');
   align-items: center;
   display: flex;
@@ -15,10 +14,8 @@ body {
 }
 
 header {
-  background-color: #cdc9a049;
   display: flex;
   width: 100%;
-
   justify-content: center;
   align-items: center;
   color: #fff;
