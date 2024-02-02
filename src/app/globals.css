@@ -1,0 +1,127 @@
+/* styles/globals.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #f5f5f5; Cor de fundo suave */
+  background-image: url('../../public/background.jpeg');
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+}
+
+header {
+  background-color: #cdc9a049;
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Cursive', sans-serif; /* Fonte cursiva para o cabeçalho */
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #ffffff8f; /* Cor de fundo do conteúdo principal */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #cdc9a09d;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: 'Dancing Script', cursive; /* Fonte cursiva para títulos */
+}
+
+.wedding-date {
+  text-align: center;
+  margin-top: 2rem;
+  color: #e74c3c; /* Cor para a data do casamento */
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 20%; /* Distribuir igualmente em 5 partes */
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #e74c3c; /* Cor da linha do tempo */
+  z-index: -1; /* Enviar para trás para que os itens fiquem na frente */
+}
+
+.timeline-content {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Espaço entre a linha do tempo e o conteúdo */
+  z-index: 1; /* Trazer para frente para sobrepor a linha do tempo */
+}
+
+.timeline h3 {
+  margin-bottom: 0.5rem;
+  color: #fff; /* Cor do texto da linha do tempo */
+}
+
+.timeline p {
+  margin: 0;
+  color: #fff; /* Cor do texto da linha do tempo */
+}
+
+.timeline li:nth-child(1) .timeline-content {
+  background-color: #3498db; /* Cor para o Período de Gelo */
+  margin-top: -10%;
+}
+
+.timeline li:nth-child(2) .timeline-content {
+  background-color: #2ecc71; /* Cor para o Período de Oração */
+  margin-top: 10%;
+}
+
+.timeline li:nth-child(3) .timeline-content {
+  background-color: #e74c3c; /* Cor para o Período de Namoro */
+  margin-top: -15%;
+}
+
+.timeline li:nth-child(4) .timeline-content {
+  background-color: #f39c12; /* Cor para o Período de Noivado */
+  margin-top: 10%;
+}
+
+.timeline li:nth-child(5) .timeline-content {
+  background-color: #9b59b6; /* Cor para o Período de Casamento */
+  margin-top: -25%;
+}
