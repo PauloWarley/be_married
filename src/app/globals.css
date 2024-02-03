@@ -13,6 +13,12 @@ body {
 
 }
 
+@font-face {
+  font-family: HelloLove;
+  src: url(../../public/Hello\ Love.ttf);
+}
+
+
 header {
   display: flex;
   width: 100%;
@@ -21,7 +27,9 @@ header {
   color: #fff;
   padding: 1rem;
   text-align: center;
-  font-family: 'Cursive', sans-serif; /* Fonte cursiva para o cabeçalho */
+  /* font-family: 'Cursive', sans-serif;*/
+  font-family: HelloLove;
+
 }
 
 main {
@@ -41,10 +49,20 @@ footer {
   width: 100%;
 }
 
-h1, h2, h3 {
-  font-family: 'Dancing Script', cursive; /* Fonte cursiva para títulos */
+h1{
+  font-family: HelloLove;
+  font-size: 50px;
 }
+h2 {
+  font-family: HelloLove;
+  font-size: 40px;
 
+}
+h3 {
+  font-family: HelloLove;
+  font-size: 30px;
+
+}
 .wedding-date {
   text-align: center;
   margin-top: 2rem;

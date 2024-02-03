@@ -5,6 +5,9 @@ import { useState, useEffect } from 'react';
 import { formatDistanceToNowStrict, parse } from 'date-fns';
 import Image from 'next/image';
 import logo from "../../public/logo.png";
+import qr from "../../public/qrcode.png";
+import photograph from "../../public/photograph.jpg";
+
 import Timeline from './components/Timeline';
 
 const WeddingCountdown = () => {
@@ -41,7 +44,7 @@ const WeddingDate = () => {
   return (
     <div className="wedding-date">
       <h2>Data do Casamento Profético</h2>
-      <p>O casamento de Paulo e Quezia será realizado em 16 de julho de 2024.</p>
+      <p>O casamento profético de Paulo e Quezia será realizado em 16 de julho de 2024.</p>
     </div>
   )
 }
@@ -101,11 +104,24 @@ export default function Home() {
 
         <WeddingDate />
         <WeddingCountdown />
+        <div style={{display:"flex", "justifyContent": "center"}}>
+
+        <Image src={photograph} heigth={540} width={540} alt="qr"></Image>
+
+        </div>
+        
         <BibleVerses />
+        
         <WeddingMessages />
         <Timeline />
      
       </main>
+      <div style={{display:"flex", "justifyContent": "center"}}>
+
+      <Image src={qr} heigth={"100%"} width={"100%"} alt="qr"></Image>
+
+      </div>
+
       <footer>
         <p>&copy; 2024 BeMarried</p>
       </footer>
